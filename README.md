@@ -63,7 +63,7 @@ export class AppModule {}
 ```
 
 
-#Inject another config module and service:
+## Inject another config module and service:
 
 ```ts
 import { ThrottlerModule } from '@nestjs/throttler';
@@ -86,10 +86,10 @@ export class AppModule {}
 ```
 
 
-##Issues
+## Issues
 
 Bugs and features related to the mongo implementation are welcome in this repository.
 
-##License
+## License
 
 NestJS Throttler Mongo Storage is licensed under the MIT license.
