@@ -1,5 +1,4 @@
-
-    Mongo storage provider for the [@nestjs/throttler](https://github.com/nestjs/throttler) package.
+Mongo storage provider for the [@nestjs/throttler](https://github.com/nestjs/throttler) package.
 
     
 ![npm version](https://img.shields.io/npm/v/nestjs-throttler-storage-mongo?style=plastic)
