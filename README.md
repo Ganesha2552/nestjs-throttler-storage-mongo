@@ -1,7 +1,6 @@
- <p align="center"> 
+
     Mongo storage provider for the [@nestjs/throttler](https://github.com/nestjs/throttler) package.
-</p>
- 
+
     
 ![npm version](https://img.shields.io/npm/v/nestjs-throttler-storage-mongo?style=plastic)
 ![npm download](https://img.shields.io/npm/dm/nestjs-throttler-storage-mongo?style=plastic)
