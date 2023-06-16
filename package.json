@@ -1,0 +1,138 @@
+{
+  "name": "nestjs-throttler-storage-mongo",
+  "description": "Mongo storage provider for nestjs/throttler",
+  "main": "index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "prebuild": "rimraf dist",
+    "preversion": "yarn run format && yarn run lint && git add -A && yarn build",
+    "build": "nest build",
+    "commit": "git-cz",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start:dev": "nodemon --watch '{src,test/app}/**/*.ts' --ignore '**/*.spec.ts' --exec 'ts-node' test/app/main.ts",
+    "lint": "eslint \"{src,apps,dist,test}/**/*.ts\" --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "test:e2e:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --config test/jest-e2e.json --runInBand",
+    "test:e2e:dev": "yarn test:e2e --watchAll",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
+    "@nestjs/cli": ">=9.5.0",
+    "@nestjs/common": ">=9.4.1",
+    "@nestjs/core": ">=9.4.1",
+    "@nestjs/graphql": ">=11.0.5",
+    "@nestjs/platform-express": ">=9.4.1",
+    "@nestjs/platform-fastify": ">=9.4.1",
+    "@nestjs/platform-socket.io": ">=9.4.1",
+    "@nestjs/platform-ws": ">=9.4.1",
+    "@nestjs/schematics": ">=9.2.0",
+    "@nestjs/testing": ">=9.4.1",
+    "@nestjs/throttler": "^4.0.0",
+    "@nestjs/websockets": ">=9.4.1",
+    "@types/express": "^4.17.17",
+    "@types/jest": "29.5.1",
+    "@types/node": "^20.2.1",
+    "@types/socket.io-client": "^3.0.0",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.59.6",
+    "@typescript-eslint/parser": "^5.59.6",
+    "apollo-server-express": "^2.25.1",
+    "conventional-changelog-cli": "^2.2.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "husky": "^8.0.3",
+    "jest": "^29.5.0",
+    "lint-staged": "^13.2.2",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.8",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^5.0.1",
+    "rxjs": "^7.8.1",
+    "socket.io-client": "^4.6.1",
+    "supertest": "^6.3.3",
+    "ts-jest": "29.1.0",
+    "ts-loader": "^9.4.2",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "@nestjs/common": ">=9.4.1",
+    "@nestjs/core": ">=9.4.1",
+    "@nestjs/throttler": ">=4.0.0",
+    "reflect-metadata": "^0.1.13"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "eslint --ext ts"
+    ],
+    "*.{md,html,json,js}": [
+      "prettier --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ganesha2552/nestjs-throttler-storage-mongo.git"
+  },
+  "keywords": [
+    "mongo",
+    "storage",
+    "nestjs-throttler",
+    "mongo-storage",
+    "express",
+    "fastify",
+    "ttl",
+    "nestjs",
+    "nest",
+    "throttler"
+  ],
+  "author": "Ganesha moorthy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ganesha2552/nestjs-throttler-storage-mongo/issues"
+  },
+  "homepage": "https://github.com/Ganesha2552/nestjs-throttler-storage-mongo#readme",
+  "dependencies": {
+    "mongodb": "^5.6.0"
+  },
+  "version": "1.0.0"
+}
