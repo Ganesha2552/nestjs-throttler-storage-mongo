@@ -9,17 +9,17 @@ export class AppController {
 
   @Get()
   async test() {
-    return this.appService.success();
+    return await this.appService.success();
   }
 
   @Get('ignored')
   @SkipThrottle()
   async ignored() {
-    return this.appService.ignored();
+    return await this.appService.ignored();
   }
 
   @Get('ignore-user-agents')
   async ignoreUserAgents() {
-    return this.appService.ignored();
+    return await this.appService.ignored();
   }
 }
