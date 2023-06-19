@@ -7,11 +7,7 @@ import { ThrottlerGuard, ThrottlerStorage } from '@nestjs/throttler';
 import { ControllerModule } from './app/controllers/controller.module';
 import { httPromise } from './utility/httpromise';
 import { Collection, MongoClient } from 'mongodb';
-import {
-  mongoCollectionName,
-  mongoDB,
-  mongoURL,
-} from './utility/mongo';
+import { mongoCollectionName, mongoDB, mongoURL } from './utility/mongo';
 import { ThrottlerStorageMongoService } from '../src/throttler-storage-mongo.service';
 
 async function dropCollectionAndCreateIndex(
@@ -44,11 +40,7 @@ describe.each`
   let app: INestApplication;
 
   beforeAll(async () => {
-    await dropCollectionAndCreateIndex(
-      mongoURL,
-      mongoDB,
-      mongoCollectionName,
-    );
+    await dropCollectionAndCreateIndex(mongoURL, mongoDB, mongoCollectionName);
     const config = {
       imports: [ControllerModule],
       providers: [
