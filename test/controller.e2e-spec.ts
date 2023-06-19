@@ -19,7 +19,6 @@ async function dropCollectionAndCreateIndex(
   dbUrl: string,
   dbName: string,
   collectionName: string,
-  indexField: string,
 ): Promise<void> {
   const client = new MongoClient(dbUrl);
   try {
@@ -50,7 +49,6 @@ describe.each`
       mongoURL,
       mongoDB,
       mongoCollectionName,
-      mongoExpireAtIndex,
     );
     const config = {
       imports: [ControllerModule],
