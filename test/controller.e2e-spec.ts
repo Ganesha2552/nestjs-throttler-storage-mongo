@@ -10,7 +10,6 @@ import { Collection, MongoClient } from 'mongodb';
 import {
   mongoCollectionName,
   mongoDB,
-  mongoExpireAtIndex,
   mongoURL,
 } from './utility/mongo';
 import { ThrottlerStorageMongoService } from '../src/throttler-storage-mongo.service';
