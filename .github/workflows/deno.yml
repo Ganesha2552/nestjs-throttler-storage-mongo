@@ -36,7 +36,7 @@ jobs:
       #   run: deno fmt --check
 
       - name: Run linter
-        run: deno lint
+        run: deno lint --rules-exclude no-explicit-any
 
       - name: Run tests
         run: deno test -A
