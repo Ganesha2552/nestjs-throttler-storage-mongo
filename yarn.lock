@@ -1014,9 +1014,9 @@
     tslib "2.5.3"
 
 "@nestjs/platform-fastify@>=9.4.1":
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/platform-fastify/-/platform-fastify-10.0.1.tgz#81175e52ee5526a3fa3f37bd2c3028aadd22b706"
-  integrity sha512-sDsonHAEeKenNAbN1bu9lRU3Iwc4TO5LSlBqfcT14TCJ0J7QLLXYstpolI7rizQnKsEj96fyi0l2uPubMj0LSQ==
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/@nestjs/platform-fastify/-/platform-fastify-10.0.2.tgz#2326af41bf7b657b70423372eb40671eecbf20e3"
+  integrity sha512-USRIJIVa0YHLtEAXPOlP2Bw3h+faEJOVgQVXd8nrN18EtEppF6bXPu0B8ikCzxs3BfajX2IECPIJZdP9If5ndg==
   dependencies:
     "@fastify/cors" "8.3.0"
     "@fastify/formbody" "7.4.0"
