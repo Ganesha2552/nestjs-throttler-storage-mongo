@@ -966,9 +966,9 @@
     tslib "2.5.3"
 
 "@nestjs/core@>=9.4.1":
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-10.0.1.tgz#4f183ac6340174a6c268c6a516d3620dc52b53c0"
-  integrity sha512-7FDR8eJEBazsFfF6j8YEotqEKvRuLWX0jEqZ5tYt3Vnhd9oS08TgnOX4jC08uWhlI/38o/Qe70i1NIjJETouFQ==
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-10.0.3.tgz#415cb541f5152a9f706ef210d38baf348ecdfb6a"
+  integrity sha512-LPZrUaGk9ZXXkOOoqNn2EwBN7bBV2+KKbNxkmJKZ/7wMO+qGE1hCLaYuwoPdwUEwmDMchFpUOydfMIeC1s/3bg==
   dependencies:
     uid "2.0.2"
     "@nuxtjs/opencollective" "0.3.2"
