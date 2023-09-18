@@ -1017,7 +1017,6 @@
   version "10.0.3"
   resolved "https://registry.yarnpkg.com/@nestjs/platform-fastify/-/platform-fastify-10.0.3.tgz#710605ec9d050f6721e32fddca14507e5c6e42d8"
   integrity sha512-WE639d21KaVwEyPoGJBG1/RrXdX8WnFInaw+rAKEM/JPosuwcdl336yInO9+JODNdS8TIUMn4ACwXlkaaCWjNg==
-
   dependencies:
     "@fastify/cors" "8.3.0"
     "@fastify/formbody" "7.4.0"
@@ -1322,9 +1321,9 @@
   integrity sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==
 
 "@types/node@*", "@types/node@>=10.0.0", "@types/node@^20.2.1":
-  version "20.3.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.3.1.tgz#e8a83f1aa8b649377bb1fb5d7bac5cb90e784dfe"
-  integrity sha512-EhcH/wvidPy1WeML3TtYFGR83UzjxeWRen9V402T8aUGYsCHOmfoisV3ZSg03gAFIbLq8TnWOJ0f4cALtnSEUg==
+  version "20.6.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.6.2.tgz#a065925409f59657022e9063275cd0b9bd7e1b12"
+  integrity sha512-Y+/1vGBHV/cYk6OI1Na/LHzwnlNCAfU3ZNGrc1LdRe/LAIbdDPTTv/HU3M7yXN448aTVDq3eKRm2cg7iKLb8gw==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
